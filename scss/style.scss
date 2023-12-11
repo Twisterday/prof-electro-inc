@@ -11,12 +11,22 @@ html {
 	box-sizing: inherit;
 }
 
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
 
 body {
 	min-width: 320px;
 	overflow-x: hidden;
+	font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .container {
@@ -84,7 +94,6 @@ body {
 	}
 }
 
-
 .menu__btn {
 	width: 40px;
 	height: 40px;
@@ -103,5 +112,32 @@ body {
 		top: 15px;
 		left: 14px;
 		box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+	}
+}
+
+.head {
+	background-image: url(../img/header-chicago-viev.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 193px;
+}
+
+.top__slider {
+	background: rgba(33, 33, 33, 0.5);
+
+	&-item {
+		color: #fff;
+		text-align: center;
+	}
+
+	&-title {
+		font-family: 'RobotoCondensed-Regular';
+		line-height: 28px;
+		font-size: 28px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 36px 0 28px;
+
 	}
 }
