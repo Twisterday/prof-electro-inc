@@ -11,6 +11,13 @@ html {
 	box-sizing: inherit;
 }
 
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -128,6 +135,7 @@ body {
 
 	&-item {
 		color: #fff;
+		min-height: 193px;
 		text-align: center;
 	}
 
@@ -138,6 +146,30 @@ body {
 		font-weight: 400;
 		text-transform: uppercase;
 		padding: 36px 0 28px;
+	}
 
+	&-lower {
+		padding: 0;
+		margin: 0;
+	}
+
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+
+		button {
+			font-size: 0;
+			border: none;
+			background-color: $yel;
+			padding: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin: 0 10px;
+		}
 	}
 }
