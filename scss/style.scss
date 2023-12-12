@@ -114,11 +114,11 @@ body {
 		width: 12px;
 		height: 2px;
 		border-radius: 1px;
-		background-color: $accent;
+		background-color: $yel;
 		position: absolute;
 		top: 15px;
 		left: 14px;
-		box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+		box-shadow: 0 4px 0 0 $yel, 0 8px 0 0 $yel;
 	}
 }
 
@@ -128,6 +128,12 @@ body {
 	background-position: center center;
 	background-size: cover;
 	min-height: 193px;
+}
+
+@media (min-width:640px) {
+	.head {
+		min-height: 386px;
+	}
 }
 
 .top__slider {
@@ -161,6 +167,13 @@ body {
 		left: 0;
 		right: 0;
 
+		.slick-active {
+			button {
+				background-color: transparent;
+				border: 1px solid $yel;
+			}
+		}
+
 		button {
 			font-size: 0;
 			border: none;
@@ -170,6 +183,21 @@ body {
 			height: 10px;
 			border-radius: 50%;
 			margin: 0 10px;
+		}
+	}
+}
+
+@media (min-width:640px) {
+	.top__slider {
+		&-item {
+			min-width: 386px;
+		}
+
+		&-title {
+			font-size: 60px;
+			line-height: 60px;
+			padding: 50 0 15;
+			// margin: 0 auto 30px;
 		}
 	}
 }
