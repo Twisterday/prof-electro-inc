@@ -16,7 +16,7 @@ $yel: #eeba2c;
 	font-weight: 400;
 }
 
-%robotocondense-700 {
+%robotocondensed-700 {
 	font-family: 'RobotoCondensed-Bold';
 	font-weight: 700;
 }
@@ -35,5 +35,8 @@ $yel: #eeba2c;
 	padding: 25px 0 40px;
 	text-align: center;
 
-	&__title {}
+	&__title {
+		margin-bottom: 47px;
+		color: $yel;
+	}
 }

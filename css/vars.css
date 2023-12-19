@@ -1,4 +1,8 @@
 .services {
   padding: 25px 0 40px;
   text-align: center;
+}
+.services__title {
+  margin-bottom: 47px;
+  color: #eeba2c;
 }/*# sourceMappingURL=vars.css.map */
