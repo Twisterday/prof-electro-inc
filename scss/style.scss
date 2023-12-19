@@ -378,6 +378,20 @@
 		&:last-child {
 			border-bottom: 1px solid $yel;
 		}
+
+		&:hover {
+
+			.services__item-text,
+			.services__item-link {
+				display: block;
+				margin-bottom: 30px;
+			}
+
+			.services__item-title {
+				margin-bottom: 20px;
+				transition: margin-bottom 0.3s ease-in-out;
+			}
+		}
 	}
 
 	&__item-img {
@@ -394,9 +408,15 @@
 
 	&__item-text {
 		display: none;
+		margin-bottom: 17px;
+		@extend %dosis-500;
+		color: #797979;
 	}
 
 	&__item-link {
 		display: none;
+		letter-spacing: 2px;
+		color: $accent;
+		@extend %robotocondensed-700;
 	}
 }
