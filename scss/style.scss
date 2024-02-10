@@ -468,7 +468,7 @@
 			min-height: 310px;
 			width: 50%;
 
-			&::nth-child(even) {
+			&:nth-child(even) {
 				border-left: none;
 			}
 

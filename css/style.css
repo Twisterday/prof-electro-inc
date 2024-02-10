@@ -585,7 +585,7 @@ body {
     min-height: 310px;
     width: 50%;
   }
-  .services__item::nth-child(even) {
+  .services__item:nth-child(even) {
     border-left: none;
   }
   .services__item:last-child {
