@@ -518,11 +518,18 @@ body {
 .services__item:hover .services__item-text,
 .services__item:hover .services__item-link {
   display: block;
-  margin-bottom: 30px;
+}
+.services__item:hover .services__item-img {
+  margin-bottom: 14px;
 }
 .services__item:hover .services__item-title {
-  margin-bottom: 20px;
-  transition: margin-bottom 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+.services__item:hover .services__item-inner {
+  border: 4px solid #262626;
+  margin: 18px;
+  padding: 25px 20px 5px;
+  min-height: 277px;
 }
 .services__item-img {
   margin-bottom: 30px;
@@ -542,4 +549,5 @@ body {
   display: none;
   letter-spacing: 2px;
   color: #262626;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
