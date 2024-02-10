@@ -377,6 +377,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding: 0 18px;
 
 		&:last-child {
 			border-bottom: 1px solid $yel;
@@ -421,8 +422,8 @@
 	&__item-text {
 		display: none;
 		margin-bottom: 17px;
-		@extend %dosis-500;
 		color: #797979;
+		@extend %dosis-500;
 	}
 
 	&__item-link {
@@ -431,5 +432,49 @@
 		color: $accent;
 		@extend %robotocondensed-700;
 		text-transform: uppercase;
+	}
+}
+
+@media (min-width:640px) {
+	.services {
+		padding: 24px 0 0;
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__title::after {
+			content: attr(data-text);
+			color: $yel;
+		}
+
+		&__descr {
+			font-size: 24px;
+			margin-bottom: 21px;
+		}
+
+		&__text {
+			line-height: 24px;
+			font-size: 18px;
+		}
+
+		&__items {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 30px;
+		}
+
+		&__item {
+			min-height: 310px;
+			width: 50%;
+
+			&::nth-child(even) {
+				border-left: none;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
 	}
 }
