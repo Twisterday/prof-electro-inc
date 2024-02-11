@@ -653,7 +653,7 @@ body {
     border-right: none;
   }
   .services__item:hover .services__item-inner {
-    margin: 10 0px;
+    margin: 10px 0;
     padding: 21px 9px 10px;
     min-height: 255px;
   }
