@@ -629,4 +629,32 @@ body {
     padding: 35px 34px 5px;
     min-height: 288px;
   }
+}
+@media (min-width: 1024px) {
+  .services {
+    padding: 50px 0 0;
+  }
+  .services__title {
+    margin-bottom: 60px;
+  }
+  .services__descr {
+    text-align: left;
+  }
+  .services__text {
+    margin-bottom: 32px;
+    max-width: 900px;
+  }
+  .services__item {
+    width: 25%;
+    padding: 0 10px;
+    min-height: 277px;
+  }
+  .services__item:nth-child(2), .services__item:nth-child(6) {
+    border-right: none;
+  }
+  .services__item:hover .services__item-inner {
+    margin: 10 0px;
+    padding: 21px 9px 10px;
+    min-height: 255px;
+  }
 }/*# sourceMappingURL=style.css.map */
