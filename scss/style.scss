@@ -441,6 +441,8 @@
 
 		&__title {
 			margin-bottom: 20px;
+			font-size: 48px;
+			line-height: 56px;
 		}
 
 		&__title::after {
@@ -450,18 +452,19 @@
 
 		&__descr {
 			font-size: 24px;
-			margin-bottom: 21px;
+			margin-bottom: 31px;
+			position: relative;
 		}
 
 		&__text {
-			line-height: 24px;
 			font-size: 18px;
+			line-height: 24px;
 		}
 
 		&__items {
 			display: flex;
 			flex-wrap: wrap;
-			margin: 0 30px;
+			margin: 0 -30px;
 		}
 
 		&__item {
@@ -474,6 +477,45 @@
 
 			&:last-child {
 				border-bottom: none;
+			}
+		}
+	}
+}
+
+@media (min-width:768px) {
+	.services {
+		padding: 50px 0 0;
+
+		&__title {
+			margin-bottom: 30px;
+		}
+
+		&__title::after {
+			content: attr(data-text);
+			color: $yel;
+		}
+
+		&__descr {
+			text-align: left;
+		}
+
+		&__text {
+			margin-bottom: 27px;
+			text-align: left;
+		}
+
+		&__items {
+			margin: 0 -40px;
+		}
+
+		&__item {
+			min-height: 334px;
+
+			&:hover {
+				.services__item-inner {
+					padding: 35px 34px 5px;
+					min-height: 288px;
+				}
 			}
 		}
 	}
