@@ -528,7 +528,8 @@ body {
 }
 .services__item:hover .services__item-text,
 .services__item:hover .services__item-link {
-  display: block;
+  opacity: 1;
+  height: auto;
 }
 .services__item:hover .services__item-img {
   margin-bottom: 14px;
@@ -542,6 +543,9 @@ body {
   padding: 25px 20px 5px;
   min-height: 277px;
 }
+.services__item-inner {
+  transition: all 0.5s;
+}
 .services__item-img {
   margin-bottom: 30px;
 }
@@ -551,13 +555,17 @@ body {
   letter-spacing: 2px;
   color: #262626;
 }
+.services__item-text, .services__item-link {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
 .services__item-text {
-  display: none;
   margin-bottom: 17px;
   color: #797979;
 }
 .services__item-link {
-  display: none;
   letter-spacing: 2px;
   color: #262626;
   text-transform: uppercase;

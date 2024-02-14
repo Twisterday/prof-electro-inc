@@ -387,7 +387,9 @@
 
 			.services__item-text,
 			.services__item-link {
-				display: block;
+				opacity: 1;
+				height: auto;
+
 			}
 
 			.services__item-img {
@@ -407,6 +409,10 @@
 		}
 	}
 
+	&__item-inner {
+		transition: all .5s;
+	}
+
 	&__item-img {
 		margin-bottom: 30px;
 	}
@@ -419,15 +425,21 @@
 		@extend %robotocondensed-700;
 	}
 
+	&__item-text,
+	&__item-link {
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		transition: all .5s;
+	}
+
 	&__item-text {
-		display: none;
 		margin-bottom: 17px;
 		color: #797979;
 		@extend %dosis-500;
 	}
 
 	&__item-link {
-		display: none;
 		letter-spacing: 2px;
 		color: $accent;
 		@extend %robotocondensed-700;
