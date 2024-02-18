@@ -701,4 +701,37 @@ body {
     padding: 21px 9px 10px;
     min-height: 255px;
   }
+}
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #262626 0%, rgba(40, 64, 116, 0) 100%);
+}
+.project__title {
+  color: #eeba2c;
+}
+.project .project__line {
+  border: 0;
+  height: 6px;
+  width: 50px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(238, 186, 44), rgba(0, 0, 0, 0));
+  margin-bottom: 40px;
+}
+.project__item-img {
+  min-height: 250px;
+  border-radius: 4px;
+}
+.project__item-inner {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.project__item-link {
+  display: block;
+  padding: 20px 0;
+  line-height: 19px;
+  letter-spacing: 2px;
+  line-height: 19px;
+  color: #262626;
 }/*# sourceMappingURL=style.css.map */
