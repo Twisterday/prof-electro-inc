@@ -653,14 +653,29 @@
 	&__item-img {
 		min-height: 250px;
 		border-radius: 4px;
+		padding: 12px 14px;
+
+		&:hover {
+			.project__item-inner {
+				opacity: 1;
+			}
+		}
 	}
 
 	&__item-inner {
 		display: flex;
 		justify-content: center;
-		background-color: rgba(#262626 .83);
+		align-items: center;
+		background-color: rgba($yel, .63);
 		border-radius: 4px;
+		min-height: 227px;
+		opacity: 0;
+		transition: all .5s;
+	}
 
+	&__item-info,
+	&__item-search {
+		margin: 0 7px;
 	}
 
 	&__item-link {

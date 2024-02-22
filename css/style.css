@@ -720,12 +720,23 @@ body {
 .project__item-img {
   min-height: 250px;
   border-radius: 4px;
+  padding: 12px 14px;
+}
+.project__item-img:hover .project__item-inner {
+  opacity: 1;
 }
 .project__item-inner {
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  align-items: center;
+  background-color: rgba(238, 186, 44, 0.63);
   border-radius: 4px;
+  min-height: 227px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.project__item-info, .project__item-search {
+  margin: 0 7px;
 }
 .project__item-link {
   display: block;
