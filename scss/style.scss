@@ -635,7 +635,7 @@
 
 .project {
 	text-align: center;
-	padding: 20px 0 40px;
+	padding: 20px 0;
 	background: linear-gradient(180deg, #262626 0%, rgba(40, 64, 116, 0) 100%);
 
 	&__title {
@@ -683,7 +683,35 @@
 		padding: 20px 0;
 		line-height: 19px;
 		letter-spacing: 2px;
-		line-height: 19px;
 		color: $accent;
+		@extend %robotocondensed-700;
+	}
+}
+
+@media (min-width: 640px) {
+	.project {
+		padding: 40px 0 20px;
+
+		.project__line {
+			height: 8px;
+			width: 100px;
+		}
+
+		&__item-img {
+			min-height: 460px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 21px 24px;
+		}
+
+		&__item-inner {
+			min-height: 417px;
+		}
+
+		&__item-link {
+			line-height: 23px;
+			font-size: 20px;
+		}
 	}
 }
