@@ -222,25 +222,25 @@
 	<section class="contact">
 		<div class="contact__pic">
 			<img src="img/contact-pic.jpg" alt="Chicago view" class="contact__pic-img">
-			<div class="contact__pic-effect"></div>
 		</div>
 		<div class="contact__form">
 			<div class="contact__form-container">
-				<h4 class="contact__form-title">
+				<h4 class="contact__form-title title">
 					Do you have a question?
 				</h4>
 				<p class="contact__form-descr">If you have any questions, you can leave us your contact information, and we
 					will get back to you as soon as possible.</p>
+
+				<form action="https://formspree.io/f/xayrjnjb" method="POST">
+					<input class="contact__input name" type="text" id="fname" name="fname" placeholder="Name*"><br>
+					<input class="contact__input phone" type="tel" id="phonenum" name="quantity"
+						placeholder="Phone number*"><br>
+					<input class="contact__input email" id="email" name="email" placeholder="Email*"><br>
+					<textarea class="contact__input message" rows="7" id="message" name="message"
+						placeholder="Your message"></textarea><br>
+					<button class="contact__form-button" type="submit">Send</button>
+				</form>
 			</div>
-			<form action="https://formspree.io/f/xayrjnjb" method="POST">
-				<input class="contact__input name" type="text" id="fname" name="fname" placeholder="Name*"><br>
-				<input class="contact__input phone" type="tel" id="phonenum" name="quantity"
-					placeholder="Phone number*"><br>
-				<input class="contact__input email" id="email" name="email" placeholder="Email*"><br>
-				<textarea class="contact__input message" rows="7" id="message" name="message"
-					placeholder="Your message"></textarea><br>
-				<button class="contact__form-button" type="submit">Send</button>
-			</form>
 		</div>
 
 
