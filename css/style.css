@@ -800,4 +800,19 @@ body {
   .project__item-img {
     margin: 0 12px;
   }
+}
+@media (min-width: 1440px) {
+  .project {
+    padding: 80px 0 60px;
+  }
+  .project__items {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .project__item-img {
+    width: 300px;
+  }
+  .project__item-img {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
