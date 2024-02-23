@@ -845,6 +845,10 @@ body {
   line-height: 24px;
   margin-bottom: 15px;
 }
+.contact__form-title::after {
+  content: attr(data-text);
+  color: #eeba2c;
+}
 .contact__form-descr {
   line-height: 24px;
   font-size: 20px;
