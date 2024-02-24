@@ -781,7 +781,7 @@ body {
   max-width: 70%;
   max-height: 70%;
 }
-.project zoomed-img {
+.project .zoomed-img {
   border-radius: 4px;
 }
 .project .close-btn {
