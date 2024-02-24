@@ -571,62 +571,6 @@ body {
   text-transform: uppercase;
 }
 
-.project__item-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.project__item-search {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
-.project__item:hover .project__item-search {
-  display: block;
-}
-
-.gallery-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.gallery-content {
-  position: relative;
-  text-align: center;
-}
-
-.gallery-content img {
-  max-width: 50%;
-  max-height: 50%;
-}
-
-zoomed-img {
-  border-radius: 4px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 1px;
-  background: none;
-  border: none;
-  color: #eeba2c;
-  cursor: pointer;
-  font-size: 16px;
-  z-index: 9991;
-}
-
 @media (min-width: 640px) {
   .services {
     padding: 24px 0 0;
@@ -801,6 +745,56 @@ zoomed-img {
   letter-spacing: 2px;
   color: #262626;
 }
+.project .project__item-img {
+  position: relative;
+  overflow: hidden;
+}
+.project .project__item-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.project .project__item:hover .project__item-search {
+  display: block;
+}
+.project .gallery-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.project .gallery-content {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+.project .gallery-content img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.project zoomed-img {
+  border-radius: 4px;
+}
+.project .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  background: none;
+  border: none;
+  color: #eeba2c;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 9991;
+}
 
 @media (min-width: 640px) {
   .project {
@@ -824,6 +818,10 @@ zoomed-img {
     line-height: 23px;
     font-size: 20px;
   }
+  .project .gallery-content img {
+    max-width: 70%;
+    max-height: 70%;
+  }
 }
 @media (min-width: 768px) {
   .project {
@@ -844,6 +842,10 @@ zoomed-img {
   }
   .project__item-link {
     padding: 30px 0;
+  }
+  .project .gallery-content img {
+    max-width: 50%;
+    max-height: 50%;
   }
 }
 @media (min-width: 1024px) {

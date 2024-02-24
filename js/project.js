@@ -27,9 +27,17 @@ function openGallery(event, element) {
 
 	zoomedImg.src = imgUrl;
 	overlay.style.display = 'flex';
+
+	overlay.addEventListener('click', function (e) {
+		if (!e.target.closest('.gallery-content')) {
+			closeGallery();
+		}
+	});
 }
 
 function closeGallery() {
 	var overlay = document.querySelector('.gallery-overlay');
 	overlay.style.display = 'none';
+
+	overlay.removeEventListener('click', function () { });
 }
