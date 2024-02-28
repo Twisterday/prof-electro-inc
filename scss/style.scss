@@ -962,6 +962,11 @@
 		display: grid;
 		align-items: center;
 		justify-content: center;
+		transition: background 0.3s ease;
+	}
+
+	&__about-item:hover {
+		background: $yel;
 	}
 
 	&__menu {
@@ -978,6 +983,11 @@
 		color: #fff;
 		margin-bottom: 10px;
 		display: inline-block;
+		transition: color 0.3s ease;
+	}
+
+	&__menu-item:hover {
+		color: $yel;
 	}
 
 	&__contact {

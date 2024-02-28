@@ -989,6 +989,10 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease;
+}
+.footer__about-item:hover {
+  background: #eeba2c;
 }
 .footer__menu {
   position: relative;
@@ -1002,6 +1006,10 @@ body {
   color: #fff;
   margin-bottom: 10px;
   display: inline-block;
+  transition: color 0.3s ease;
+}
+.footer__menu-item:hover {
+  color: #eeba2c;
 }
 .footer__contact {
   position: relative;
