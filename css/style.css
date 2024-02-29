@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.project__item-link, .services__item-link, .services__item-title {
+.project__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -78,7 +78,7 @@
   font-weight: 400;
 }
 
-.project__item-link, .services__item-link, .services__item-title {
+.project__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -315,6 +315,10 @@ body {
   border-radius: 5px;
   border: none;
 }
+.top__slider-btn:hover {
+  color: #333;
+  background-color: rgba(238, 186, 44, 0.7);
+}
 .top__slider-lower {
   line-height: 20px;
   font-size: 17px;
@@ -461,6 +465,11 @@ body {
   border-radius: 5px;
   border: none;
   color: #eeba2c;
+  transition: all 0.5s;
+}
+.call__btn:hover {
+  color: #262626;
+  background-color: #eeba2c;
 }
 
 @media (min-width: 768px) {
@@ -565,11 +574,6 @@ body {
   margin-bottom: 17px;
   color: #797979;
 }
-.services__item-link {
-  letter-spacing: 2px;
-  color: #262626;
-  text-transform: uppercase;
-}
 
 @media (min-width: 640px) {
   .services {
@@ -655,7 +659,7 @@ body {
   .services__item {
     width: 25%;
     padding: 0 10px;
-    min-height: 298px;
+    min-height: 280px;
   }
   .services__item:nth-child(2), .services__item:nth-child(6) {
     border-right: none;
@@ -691,7 +695,7 @@ body {
   .services__item {
     width: 230px;
     padding: 0 10px;
-    min-height: 317px;
+    min-height: 300px;
   }
   .services__item:nth-child(2), .services__item:nth-child(6) {
     border-right: none;
