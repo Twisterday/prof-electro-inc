@@ -638,11 +638,18 @@
 	padding: 20px 0;
 	background: linear-gradient(180deg, #262626 0%, rgba(40, 64, 116, 0) 100%);
 
+	&__topper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__title {
 		color: $yel;
 	}
 
-	.project__line {
+	&__line {
 		border: 0;
 		height: 6px;
 		width: 50px;

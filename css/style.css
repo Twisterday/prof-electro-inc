@@ -720,10 +720,16 @@ body {
   padding: 20px 0;
   background: linear-gradient(180deg, #262626 0%, rgba(40, 64, 116, 0) 100%);
 }
+.project__topper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .project__title {
   color: #eeba2c;
 }
-.project .project__line {
+.project__line {
   border: 0;
   height: 6px;
   width: 50px;
