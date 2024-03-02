@@ -22,17 +22,10 @@
 
 	.nav__btn {
 		color: white;
-		// text-decoration: none;
-		// border: none;
-		// background: none;
-		// margin: 20px auto;
-		// @extend %dosis-300;
-
 		display: block;
 		padding: 20px 0;
 		line-height: 19px;
 		letter-spacing: 2px;
-		// color: $accent;
 		@extend %robotocondensed-700;
 	}
 
@@ -77,27 +70,6 @@
 		margin-left: 0px;
 	}
 }
-
-// .menu__btn {
-// 	width: 40px;
-// 	height: 40px;
-// 	border-radius: 3px;
-// 	background-color: #fff;
-// 	border: none;
-// 	position: relative;
-
-// 	&::after {
-// 		content: "";
-// 		width: 12px;
-// 		height: 2px;
-// 		border-radius: 1px;
-// 		background-color: $yel;
-// 		position: absolute;
-// 		top: 15px;
-// 		left: 14px;
-// 		box-shadow: 0 4px 0 0 $yel, 0 8px 0 0 $yel;
-// 	}
-// }
 
 .head {
 	background-image: url(../img/header-chicago-viev.jpg);
