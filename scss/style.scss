@@ -12,11 +12,6 @@
 		align-items: center;
 	}
 
-	.container-fluid {
-		display: flex;
-		justify-content: space-between;
-	}
-
 	.nav__btn {
 		color: white;
 		text-decoration: none;
@@ -47,10 +42,8 @@
 }
 
 @media (min-width:640px) {
-	.header {
-		&__inner {
-			min-height: 100px;
-		}
+	.navbar {
+		min-height: 100px;
 	}
 }
 

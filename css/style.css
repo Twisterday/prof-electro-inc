@@ -233,10 +233,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header .container-fluid {
-  display: flex;
-  justify-content: space-between;
-}
 .header .nav__btn {
   color: white;
   text-decoration: none;
@@ -262,7 +258,7 @@ body {
 }
 
 @media (min-width: 640px) {
-  .header__inner {
+  .navbar {
     min-height: 100px;
   }
 }
