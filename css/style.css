@@ -8,12 +8,12 @@
   font-weight: 400;
 }
 
-.project__item-link, .services__item-title {
+.project__item-link, .services__item-title, .header .nav__btn {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
 
-.footer__about-text, .call__text, .header .nav__btn {
+.footer__about-text, .call__text {
   font-family: "Dosis-Light";
   font-weight: 300;
 }
@@ -78,12 +78,12 @@
   font-weight: 400;
 }
 
-.project__item-link, .services__item-title {
+.project__item-link, .services__item-title, .header .nav__btn {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
 
-.footer__about-text, .call__text, .header .nav__btn {
+.footer__about-text, .call__text {
   font-family: "Dosis-Light";
   font-weight: 300;
 }
@@ -227,18 +227,24 @@ body {
 .header {
   background-color: #262626;
 }
-.header__inner {
+.header .navbar {
   min-height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.header .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .header .nav__btn {
   color: white;
-  text-decoration: none;
-  border: none;
-  background: none;
-  margin: 20px auto;
+  display: block;
+  padding: 20px 0;
+  line-height: 19px;
+  letter-spacing: 2px;
 }
 .header .nav__btn::before {
   margin-left: auto;

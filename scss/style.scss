@@ -5,20 +5,35 @@
 .header {
 	background-color: $accent;
 
-	&__inner {
+
+	.navbar {
 		min-height: 80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		&-nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	.nav__btn {
 		color: white;
-		text-decoration: none;
-		border: none;
-		background: none;
-		margin: 20px auto;
-		@extend %dosis-300;
+		// text-decoration: none;
+		// border: none;
+		// background: none;
+		// margin: 20px auto;
+		// @extend %dosis-300;
+
+		display: block;
+		padding: 20px 0;
+		line-height: 19px;
+		letter-spacing: 2px;
+		// color: $accent;
+		@extend %robotocondensed-700;
 	}
 
 	.nav__btn::before {
