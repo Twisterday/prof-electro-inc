@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 
-.footer__about-text, .call__text {
+.footer__about-text, .call__text, .header .nav__btn {
   font-family: "Dosis-Light";
   font-weight: 300;
 }
@@ -83,7 +83,7 @@
   font-weight: 700;
 }
 
-.footer__about-text, .call__text {
+.footer__about-text, .call__text, .header .nav__btn {
   font-family: "Dosis-Light";
   font-weight: 300;
 }
@@ -233,6 +233,33 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav__btn {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background: none;
+  margin: 20px auto;
+}
+.header .nav__btn::before {
+  margin-left: auto;
+}
+.header .nav__btn::after,
+.header .nav__btn::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #eeba2c;
+  display: block;
+  transition: 0.5s;
+}
+.header .nav__btn:hover::after,
+.header .nav__btn:hover::before {
+  width: 100%;
+}
 
 @media (min-width: 640px) {
   .header__inner {
@@ -253,26 +280,6 @@ body {
     margin-left: 0px;
   }
 }
-.menu__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  background-color: #fff;
-  border: none;
-  position: relative;
-}
-.menu__btn::after {
-  content: "";
-  width: 12px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: #eeba2c;
-  position: absolute;
-  top: 15px;
-  left: 14px;
-  box-shadow: 0 4px 0 0 #eeba2c, 0 8px 0 0 #eeba2c;
-}
-
 .head {
   background-image: url(../img/header-chicago-viev.jpg);
   background-repeat: no-repeat;

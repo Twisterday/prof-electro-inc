@@ -11,6 +11,39 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	.container-fluid {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav__btn {
+		color: white;
+		text-decoration: none;
+		border: none;
+		background: none;
+		margin: 20px auto;
+		@extend %dosis-300;
+	}
+
+	.nav__btn::before {
+		margin-left: auto;
+	}
+
+	.nav__btn::after,
+	.nav__btn::before {
+		content: '';
+		width: 0%;
+		height: 2px;
+		background: $yel;
+		display: block;
+		transition: 0.5s;
+	}
+
+	.nav__btn:hover::after,
+	.nav__btn:hover::before {
+		width: 100%;
+	}
 }
 
 @media (min-width:640px) {
@@ -37,26 +70,26 @@
 	}
 }
 
-.menu__btn {
-	width: 40px;
-	height: 40px;
-	border-radius: 3px;
-	background-color: #fff;
-	border: none;
-	position: relative;
+// .menu__btn {
+// 	width: 40px;
+// 	height: 40px;
+// 	border-radius: 3px;
+// 	background-color: #fff;
+// 	border: none;
+// 	position: relative;
 
-	&::after {
-		content: "";
-		width: 12px;
-		height: 2px;
-		border-radius: 1px;
-		background-color: $yel;
-		position: absolute;
-		top: 15px;
-		left: 14px;
-		box-shadow: 0 4px 0 0 $yel, 0 8px 0 0 $yel;
-	}
-}
+// 	&::after {
+// 		content: "";
+// 		width: 12px;
+// 		height: 2px;
+// 		border-radius: 1px;
+// 		background-color: $yel;
+// 		position: absolute;
+// 		top: 15px;
+// 		left: 14px;
+// 		box-shadow: 0 4px 0 0 $yel, 0 8px 0 0 $yel;
+// 	}
+// }
 
 .head {
 	background-image: url(../img/header-chicago-viev.jpg);
