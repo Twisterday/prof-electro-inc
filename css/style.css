@@ -259,7 +259,7 @@ body {
 
 .footer__about.element-animation {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(-30px);
 }
 
 .footer__about.element-animation.element-show {
@@ -270,7 +270,7 @@ body {
 
 .footer__menu.element-animation {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(-30px);
 }
 
 .footer__menu.element-animation.element-show {
@@ -281,7 +281,7 @@ body {
 
 .footer__contact.element-animation {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(-30px);
 }
 
 .footer__contact.element-animation.element-show {
