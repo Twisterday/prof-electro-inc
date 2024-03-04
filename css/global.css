@@ -145,6 +145,17 @@ body {
   transform: translateX(0);
 }
 
+.services__item.element-animation {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.services__item.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 1.5s, transform 1.5s;
+  transform: translateX(0);
+}
+
 .project__topper.element-animation {
   opacity: 0;
   transform: translateX(50px);
@@ -154,6 +165,17 @@ body {
   opacity: 1;
   transition: opacity 1.5s, transform 1.5s;
   transform: translateX(0);
+}
+
+.project__items.element-animation {
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.project__items.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 1.5s, transform 1.5s;
+  transform: translateY(0);
 }
 
 .contact.element-animation {
