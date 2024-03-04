@@ -183,15 +183,3 @@ body {
 	transition: opacity 1.5s, transform 1.5s;
 	transform: translateY(0);
 }
-
-// @media (max-width: 1024px) {
-// 	.services__items.element-animation {
-// 		opacity: 1;
-// 		transform: translateX(0);
-// 	}
-
-// 	.services__items.element-animation.element-show {
-// 		transition: none;
-// 		/* вимикаємо анімацію при умові виконання @media */
-// 	}
-// }
