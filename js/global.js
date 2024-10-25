@@ -14,3 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 });
+
+function removeAnimationClass() {
+	const elements = document.querySelectorAll('.element-animation');
+
+	if (window.innerWidth <= 639) {
+		elements.forEach((element) => {
+			element.classList.remove('element-animation');
+		});
+	}
+}
+
+window.addEventListener('load', removeAnimationClass);
+window.addEventListener('resize', removeAnimationClass);

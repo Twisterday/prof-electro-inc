@@ -814,9 +814,10 @@ body {
   margin-bottom: 40px;
 }
 .project__item-img {
-  min-height: 250px;
   border-radius: 4px;
   padding: 12px 14px;
+  max-width: 100%;
+  height: auto;
 }
 .project__item-img:hover .project__item-inner {
   opacity: 1;
@@ -844,6 +845,13 @@ body {
 .project .project__item-img {
   position: relative;
   overflow: hidden;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
 }
 .project .project__item-search {
   position: absolute;
@@ -906,6 +914,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 21px 24px;
+    position: relative;
+    overflow: hidden;
   }
   .project__item-inner {
     min-height: 417px;

@@ -658,9 +658,11 @@
 	}
 
 	&__item-img {
-		min-height: 250px;
+		// min-height: 250px;
 		border-radius: 4px;
 		padding: 12px 14px;
+		max-width: 100%;
+		height: auto;
 
 		&:hover {
 			.project__item-inner {
@@ -697,6 +699,12 @@
 	.project__item-img {
 		position: relative;
 		overflow: hidden;
+		height: auto;
+		object-fit: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: 10px;
 	}
 
 	.project__item-search {
@@ -770,6 +778,8 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			padding: 21px 24px;
+			position: relative;
+			overflow: hidden;
 		}
 
 		&__item-inner {
